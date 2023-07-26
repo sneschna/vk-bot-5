@@ -1,0 +1,3 @@
+acces_token = 'vk1.a.DIq1aWC-WuuBhtWfktgk_WIc08zaP41OXm0EYeEP2t4tGC_733NQbWjQGBevowi8tHLx9pRW-oLs9_8ik04BKBSoQOOeVHQ6WaXACjU58x4rxlyisjlMwjvCyw0aSxD_dxV2t3ku8YlvE17nmq02OFtXLBxYaPqIx8yDZbqUqdiy-UwfbrFnYB-LNGEwF-Vp'
+comunity_token = '2e6047fa2e6047fa2e6047faba2d74ba1122e602e6047fa4ad6ac4fcf1e976749504e4c'
+db_url_object = "postgresql+psycopg2://student:student@localhost/student_diplom"
