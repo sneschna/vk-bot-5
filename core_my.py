@@ -96,32 +96,6 @@ class VkTools():
 
         return res
 
-    def get_photos(self, user_id):
-        photos = self.api.method('photos.get', {
-            'user_id': user_id,
-            'album_id': 'profile',
-            'extended': 1
-        })
-
-        try:
-            photos = photos['items']
-        except KeyError:
-            return []
-
-        res = []
-
-        for photo in photos:
-            res.append({
-                'owner_id': photo['owner_id'],
-                'id': photo['id'],
-                'likes': photo['likes']['count'],
-                'comments': photo['comments']['count']
-            })
-
-        res.sort(key=lambda x: x['likes'] + x['comments'] * 10, reverse=True)
-
-        return res
-
 
 def is_valid_date(date_str):
     try:
